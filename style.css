@@ -16,7 +16,7 @@ body {
     width: 320px;
 }
 
-svg path {
+.sidebar svg path {
     fill: #FFFFFF
 }
 
@@ -66,6 +66,8 @@ svg path {
 
 .top-side {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .top-side svg {
@@ -94,4 +96,39 @@ svg path {
     flex-grow: 1;
     padding: 20px;
     overflow: auto;
+}
+
+.top-side svg {
+    width: 30px;
+    height: 30px;
+}
+
+.top-side {
+    margin: 5px 50px;
+}
+
+.search-form{
+    display: flex;
+    width: 1000px;
+    gap: 15px;
+}
+
+.search-bar {
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #E2E8F0;
+    border: none;
+}
+
+.header-profile-picture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header-top-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
