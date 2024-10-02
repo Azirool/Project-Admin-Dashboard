@@ -184,3 +184,43 @@ body {
     color: #FFFFFF;
     cursor: pointer;
 }
+
+.left-content{
+    background-color: bisque;
+}
+
+.right-content{
+    background-color: pink;
+}
+
+.content-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+    background-color: aqua;
+}
+
+.left-content-child {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 8px;       
+}
+
+.right-content-child {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8px;
+}
+
+.announcement-data h4,
+.announcement-data p {
+    margin: 0;
+    padding: 0; 
+}
+
+.announcement-content {
+    background-color: yellow;
+}
