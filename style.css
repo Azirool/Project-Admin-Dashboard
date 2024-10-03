@@ -186,7 +186,6 @@ body {
 }
 
 .left-content{
-    background-color: bisque;
     width: 1100px;
 }
 
@@ -206,7 +205,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        gap: 8px;       
+        gap: 50px;
 }
 
 .right-content-child {
@@ -280,4 +279,37 @@ body {
 
 .trending-username {
     font-size: 17px;
+}
+
+[class^="rcontent-"] {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.yellow-side{
+    width: 20px;
+    height: inherit;
+    background-color: #FACC15;
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+
+.project-task {
+    padding: 30px;
+}
+
+.project-button {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.project-button svg {
+    width: 30px;
+    height: 30px;
 }
