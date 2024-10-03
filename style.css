@@ -187,18 +187,19 @@ body {
 
 .left-content{
     background-color: bisque;
+    width: 1100px;
 }
 
 .right-content{
-    background-color: pink;
+    display: flex;
+    justify-content: end;
 }
 
 .content-parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 8px;
-    background-color: aqua;
+    gap: 20px;
 }
 
 .left-content-child {
@@ -221,6 +222,62 @@ body {
     padding: 0; 
 }
 
+.announcement-data h4:not(.exclude-margin),
+.announcement-data p {
+    margin-top: 5px; 
+}
+
 .announcement-content {
-    background-color: yellow;
+    background-color: #FFFFFF;
+    padding: 30px;
+    height: 280px;
+    width: 270px;
+    border-radius: 10px;
+}
+
+.announcement-data:not(:first-of-type) {
+    margin-top: 20px;
+}
+
+.trending-data {
+    display: flex;
+    align-items: center;
+}
+
+.trending-data-content p {
+    margin: 0;
+    padding: 0; 
+}
+
+.trending-data-content p:not(.trending-username){
+    margin-top: 5px;
+}
+
+.trending-data img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.trending-data:not(:first-of-type) {
+    margin-top: 20px;
+}
+
+.trending-data-content {
+    margin-left: 10px;
+}
+
+.trending-content {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.trending-title {
+    font-size: 15px;
+    color: #666565;
+}
+
+.trending-username {
+    font-size: 17px;
 }
